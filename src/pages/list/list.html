@@ -1,23 +1,153 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>List</ion-title>
+
+  <ion-navbar transparent >
+    <ion-title>DOAÇÕES</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+
+<ion-content  class="bg">
+    <ion-card>
+      <img src="assets/imgs/1.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+            Geladeira retrô amarela
+          </ion-card-title>
+        <p>
+          Em ótimo estado, vou doar porque vou me mudar de cidade e não tenho como levar.
+        </p>
+      </ion-card-content>
+
+      <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Interessados</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button secondary icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>Eu quero! </div>
+            </button>
+          </ion-col>
+
+          <ion-col center text-center>
+              <ion-note>
+                4 dias restante
+              </ion-note>
+            </ion-col>
+          
+      </ion-row>
+    </ion-card>
+    
+    <ion-card>
+        <img src="assets/imgs/2.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Geladeira vintage
+            </ion-card-title>
+          <p>
+            Está com defeito, demora muito para gelar.
+          </p>
+        </ion-card-content>
+
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-start clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Interessados</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button secondary icon-start clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>Eu quero! </div>
+              </button>
+            </ion-col>
+
+            <ion-col center text-center>
+                <ion-note>
+                  4 dias restante
+                </ion-note>
+              </ion-col>
+            
+        </ion-row>
+    </ion-card>
+  
+    <ion-card>
+      <img src="assets/imgs/3.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          Sofá dois lugares
+          </ion-card-title>
+        <p>
+          Em ótimo estado, apenas com um pequeno furo na lateral esquerda, já comprei outro, favor já pode vir buscar! Obs.: acompanha 2 puffs.
+        </p>
+      </ion-card-content>
+      <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Interessados</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button secondary icon-start clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>Eu quero! </div>
+            </button>
+          </ion-col>
+  
+            <ion-col center text-center>
+              <ion-note>
+                4 dias restante
+              </ion-note>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <img src="assets/imgs/4.jpg"/>
+      <ion-card-content>
+        <ion-card-title>
+          Conjunto travesseiro
+          </ion-card-title>
+        <p>
+          2 travesseiro normais e travesseiro pequenos com fronha de onça.
+        </p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Interessados</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button secondary icon-start clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>Eu quero! </div>
+          </button>
+        </ion-col>
+
+          <ion-col center text-center>
+            <ion-note>
+              4 dias restante
+            </ion-note>
+          </ion-col>
+      </ion-row>
+    </ion-card>
+    
+      
+        
+              
+
 </ion-content>

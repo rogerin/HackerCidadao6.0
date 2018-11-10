@@ -1,0 +1,48 @@
+<ion-content class="bg" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center> 
+        
+        <img width="60%"  src="assets/imgs/logo.png" alt="">
+        <br><br><br><br>
+          
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col>
+          <ion-list>
+            <form  novalidate> 
+              <ion-list >
+                <ion-item transparent>
+                  <ion-label><ion-icon color="light" name="mail"></ion-icon></ion-label>
+                  <ion-input  autocomplete="no" autocorrect="no" id="email" name="email"  type="text" placeholder="E-Mail"></ion-input>
+                </ion-item>
+        
+                <ion-item>
+                  <ion-label><ion-icon  color="light" name="lock"></ion-icon></ion-label>
+                  <ion-input  autocomplete="no" autocorrect="no" id="password" name="password" type="password" placeholder="Sua Senha"></ion-input>
+                </ion-item>
+              </ion-list>
+              <ion-row>
+                <ion-col>
+                  <button (click)="openHome()" ion-button block large>Entrar</button>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <button type="reset" ion-button block large [navPush]="'home'" color="buttonBaseClear" class="btShadow">Cadastre-se</button>
+                </ion-col>
+              </ion-row>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
+      <ion-col text-center [navPush]="'password-recover-page'">
+        Esqueceu a senha ?
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+</ion-content>

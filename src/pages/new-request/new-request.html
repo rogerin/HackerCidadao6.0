@@ -1,0 +1,77 @@
+<!--
+  Generated template for the NewRequestPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar transparent >
+    <ion-title>NOVA SOLICITAÇÃO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="bg" >
+
+  <p class="justify"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis, quo veniam nesciunt mollitia consectetur repellat officiis numquam eligendi odit adipisci. Voluptatibus veniam fugiat consectetur. Veritatis, molestias suscipit! In, architecto? </p>
+
+    <ion-list padding>
+      <ion-item>
+        <ion-label fixed>Titulo</ion-label>
+        <ion-input type="text" placeholder="Ex.: Sofá antigo"></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Descreva sua solicitação</ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea placeholder="Ex.: Este sofá de dois lugares, tem um rasgo na lateral esquerda."></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+          <ion-range [(ngModel)]="calendar">
+            <ion-icon range-left small name="calendar"></ion-icon>
+            <ion-icon range-right name="calendar"></ion-icon>
+          </ion-range>
+        </ion-item>
+
+      <ion-item text-wrap>
+       {{calendar}} dias para enviar a solicitação automática para prefeitura.
+      </ion-item>
+
+        
+    
+    
+    </ion-list>
+
+    <ion-card *ngIf="pictureOne">
+        <img src="{{pictureOne}}"/>
+        <ion-card-content>
+          <ion-card-title>
+            Foto
+            </ion-card-title>
+          <p>
+            <small> Tente enviar a imagem que representa melhor o estado do item. </small>
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+    <ion-row>
+      <ion-col text-center>
+        <h4>Enviar foto</h4>
+        <img (click)="presentActionSheet(1)"  width="20%" src="assets/imgs/camera.png" alt="">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <button (click)="openHome()" ion-button block large>Enviar solicitação</button>
+        </ion-col>
+      </ion-row>
+
+
+      
+</ion-content>

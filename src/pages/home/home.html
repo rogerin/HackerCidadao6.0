@@ -1,18 +1,34 @@
-<ion-header>
-  <ion-navbar>
+<ion-header transparent>
+  <ion-navbar transparent>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
+
+    <ion-buttons end>
+      <button [navPush]="'chat'" ion-button icon-only>
+          <ion-icon name="paper-plane"></ion-icon> 
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content  class="bg">
+  <h3 class="justify">Olá Recifense!</h3>
+  <h4 class="justify">Você sabe o que é a Economia Circular? </h4>
+  <p class="justify">Economia circular é muito mais do que a gestão de resíduos. O conceito engloba manter os recursos em uso o maior tempo possível, minimizar sua disposição, utilizar de maneira mais eficiente possível, recuperar e regenerar produtos e materiais em todo o seu ciclo de vida.</p>
+  <p class="justify">Entenda mais sobre esta economia nesta matéria mais detalhada. <a href="https://www.basf.com/br/pt/company/news-and-media/quimica_dia_a_dia/economia_circular.html"> Ver matéria</a>.</p>
+ 
+  <ion-row>
+    <ion-col>
+      <button text-wrap ion-button block large [navPush]="'newRequest'">DOAR / SOLICITAR RECOLHIMENTO</button>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+    <ion-col>
+      <button text-wrap ion-button block large [navPush]="'list'">DOAÇÕES / SOLICITAÇÕES EM ABERTO</button>
+    </ion-col>
+  </ion-row>
+  
 </ion-content>
